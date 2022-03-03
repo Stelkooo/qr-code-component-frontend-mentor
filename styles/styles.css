@@ -16,11 +16,15 @@
 html {
     background-color: var(--light-grey);
 }
+body {
+    font-family: var(--font);
+}
 /* QR Component */
 .component {
     width: 320px;
     height: 497px;
     margin: 0 auto;
+    padding: 1em;
     background-color: var(--white);
     box-shadow: 0 25px 25px rgba(0, 0, 0, .1);
     border-radius: 20px;
@@ -30,7 +34,13 @@ html {
 }
 /* QR Code Image */
 img {
-    width: 288px;
-    margin-top: .9em;
+    width: 100%;
     border-radius: 20px;
+}
+/* Text */
+h3 {
+    color: var(--dark-blue);
+    font-weight: var(--bold-weight);
+    text-align: center;
+    font-size: 1.5em;
 }
