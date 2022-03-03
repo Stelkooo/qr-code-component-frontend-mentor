@@ -13,6 +13,9 @@
     --regular-weight: 400;
     --bold-weight: 700;
 }
+* {
+    box-sizing: border-box;
+}
 html {
     background-color: var(--light-grey);
 }
@@ -22,7 +25,6 @@ body {
 /* QR Component */
 .component {
     width: 320px;
-    height: 497px;
     margin: 0 auto;
     padding: 1em;
     background-color: var(--white);
@@ -30,7 +32,6 @@ body {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 /* QR Code Image */
 img {
@@ -38,17 +39,17 @@ img {
     border-radius: 20px;
 }
 /* Text */
-h3 {
+.text {
     padding: 0 1em;
-    color: var(--dark-blue);
-    font-weight: var(--bold-weight);
     text-align: center;
-    font-size: 1.5em;
+}
+h3 {   
+    color: var(--dark-blue);
+    font-weight: var(--bold-weight);   
+    font-size: 1.3em;
 }
 p {
-    padding: 0 1em;
     color: var(--greyish-blue);
     font-weight: var(--regular-weight);
-    text-align: center;
-    font-size: 1.1em;
+    font-size: .95em;
 }
